@@ -1,0 +1,52 @@
+# Offline test suite (item 15, CI part).
+#
+# Runs exactly what a local `python -m pytest` runs: pyproject's addopts
+# (`-m "not live_eval"`) exclude the live-Groq eval suite, so this job needs
+# no secrets and makes no LLM calls (decision: item 40c).
+#
+# Dependencies come from uv.lock (`--frozen`, same as deploy.sh).
+# pytest is not part of the locked production dependencies — it is only
+# declared in requirements-dev.txt — so it is layered on top with `--with`,
+# using the same version floor. Layering requirements-dev.txt itself via
+# `--with-requirements` would also pull the unpinned requirements.txt and
+# let uv resolve production packages away from the lock.
+
+name: tests
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      # Headless; charts.py already forces Agg, this covers any other import.
+      MPLBACKEND: Agg
+      # Deterministic; the bot's own TIMEZONE setting is not read by the tests.
+      TZ: UTC
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.11"
+          enable-cache: true
+          cache-dependency-glob: uv.lock
+
+      - name: Install locked dependencies
+        run: uv sync --frozen
+
+      - name: Run offline test suite
+        run: uv run --frozen --with "pytest>=9.0.3" python -m pytest -q

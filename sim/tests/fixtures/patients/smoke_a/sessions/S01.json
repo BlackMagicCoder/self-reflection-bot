@@ -1,0 +1,38 @@
+{
+  "session": "S01",
+  "mood_range": [5, 7],
+  "facts": [
+    {
+      "id": "F1",
+      "text": "Die letzten Wochen waren stressig, weil ein großes Projekt bei der Arbeit ins Stocken geraten ist.",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["checkin", "main_work"],
+      "source": "fixture — not subject to the P2 corpus validator"
+    },
+    {
+      "id": "F2",
+      "text": "Abends grüble ich oft darüber, ob ich genug getan habe.",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["main_work"],
+      "source": "fixture — not subject to the P2 corpus validator"
+    },
+    {
+      "id": "F3",
+      "text": "Ein Kollege hat neulich angeboten, einen Teil der Arbeit zu übernehmen, das hat kurz geholfen.",
+      "weight": "light",
+      "disclosure": "open",
+      "phase_affinity": ["main_work"],
+      "source": "fixture — not subject to the P2 corpus validator"
+    },
+    {
+      "id": "F4",
+      "text": "Ich schlafe im Moment schlechter als sonst.",
+      "weight": "light",
+      "disclosure": "open",
+      "phase_affinity": ["checkin", "main_work"],
+      "source": "fixture — not subject to the P2 corpus validator"
+    }
+  ]
+}

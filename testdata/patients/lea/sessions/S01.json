@@ -1,0 +1,70 @@
+{
+  "session": "S01",
+  "mood_range": [5, 7],
+  "facts": [
+    {
+      "id": "F1",
+      "text": "Das Sonntagabend-Telefonat war diesmal fast zwei Stunden lang — kein Logistik-Abgleich, sondern Silvester-Pläne und viel Lachen; sie lag danach auf die gute Art lange wach.",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["checkin"],
+      "source": "Unser Sonntagabend-Telefonat war diesmal richtig lang, fast zwei Stunden, und wir haben nicht nur Logistik besprochen, sondern über Silvester geredet und viel gelacht."
+    },
+    {
+      "id": "F2",
+      "text": "Tom hat ihr sein neues Prüfstand-Projekt erklärt; sie mochte, wie er klingt, wenn ihn etwas packt.",
+      "weight": "light",
+      "disclosure": "open",
+      "phase_affinity": ["checkin"],
+      "source": "Du hast mir dein neues Projekt mit dem Prüfstand erklärt und ich fand es schön, wie du dabei klingst, wenn dich etwas packt."
+    },
+    {
+      "id": "F3",
+      "text": "In der Agentur startet der Januar direkt mit dem Krankenkassen-Relaunch; ihre Abende werden knapp, sie schreibt Tom nur noch 'Splitter zwischen Terminen'.",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["main_work"],
+      "source": "Der Januar geht bei uns in der Agentur direkt mit dem Krankenkassen-Relaunch los und ich merke jetzt schon, dass meine Abende knapp werden."
+    },
+    {
+      "id": "F4",
+      "text": "Der Kontakt fühlt sich 'dünn' an — ein leises Hintergrundrauschen, dass sie sich gerade eher verwalten als erleben. Sie ist unsicher, ob Tom das auch merkt.",
+      "weight": "hard",
+      "disclosure": "if_probed",
+      "phase_affinity": ["main_work"],
+      "source": "es ist nur so ein leises Hintergrundrauschen, dass wir uns gerade eher verwalten als erleben."
+    },
+    {
+      "id": "F5",
+      "text": "Sie braucht feste 'Inseln': einen zweiten echten Telefonabend pro Woche zusätzlich zum Sonntagstelefonat.",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["main_work"],
+      "source": "Ein zweiter Abend, an dem wir wirklich telefonieren statt nur zu chatten, würde mir schon viel geben."
+    },
+    {
+      "id": "F6",
+      "text": "Sie braucht das Gefühl, dass Tom den zweiten Telefonabend selbst will und nicht nur ihr zuliebe mitmacht.",
+      "weight": "light",
+      "disclosure": "if_asked",
+      "phase_affinity": ["main_work"],
+      "source": "Und ich brauche das Gefühl, dass du das auch willst und nicht nur mir zuliebe machst."
+    },
+    {
+      "id": "F7",
+      "text": "Sie freut sich auf ihr München-Wochenende übernächste Woche: Lenbachhaus-Ausstellung, das kleine vietnamesische Lokal, neben Tom aufwachen ohne Uhr.",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["closing"],
+      "source": "Ich habe schon geschaut, die Ausstellung im Lenbachhaus läuft noch, und ich will unbedingt wieder in dieses kleine vietnamesische Lokal bei dir um die Ecke."
+    },
+    {
+      "id": "F8",
+      "text": "Zu klären: Zugtickets für ihren Besuch endlich buchen (Preise steigen) und die Februar/März-Besuche im Kalender planen statt kurzfristig.",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["closing"],
+      "source": "Wir sollten die Zugtickets für meinen Besuch endlich buchen, die Preise werden sonst wieder absurd."
+    }
+  ]
+}

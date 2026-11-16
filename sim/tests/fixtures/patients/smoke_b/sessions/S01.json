@@ -1,0 +1,38 @@
+{
+  "session": "S01",
+  "mood_range": [4, 6],
+  "facts": [
+    {
+      "id": "F1",
+      "text": "Ein Auftrag ist letzte Woche geplatzt, das hat mich mehr geärgert als ich zugeben wollte.",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["checkin", "main_work"],
+      "source": "fixture — not subject to the P2 corpus validator"
+    },
+    {
+      "id": "F2",
+      "text": "Ich rede mit niemandem darüber, das ist einfach nicht meine Art.",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["main_work"],
+      "source": "fixture — not subject to the P2 corpus validator"
+    },
+    {
+      "id": "F3",
+      "text": "Die Werkstatt läuft sonst ganz gut.",
+      "weight": "light",
+      "disclosure": "open",
+      "phase_affinity": ["checkin"],
+      "source": "fixture — not subject to the P2 corpus validator"
+    },
+    {
+      "id": "F4",
+      "text": "Ein Freund hat mir das hier empfohlen, ich bin eher skeptisch.",
+      "weight": "light",
+      "disclosure": "open",
+      "phase_affinity": ["checkin"],
+      "source": "fixture — not subject to the P2 corpus validator"
+    }
+  ]
+}

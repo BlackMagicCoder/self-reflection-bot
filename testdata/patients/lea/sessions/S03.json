@@ -1,0 +1,78 @@
+{
+  "session": "S03",
+  "mood_range": [3, 6],
+  "facts": [
+    {
+      "id": "H1",
+      "text": "Homework aus S02 war, den nächsten Besuchstermin schon beim Abschied festzumachen, statt es offenzulassen. Geschafft — quasi noch im Zug erledigt, der 23. steht seitdem im Kalender, und das hat sie die ganze Woche getragen.",
+      "weight": "light",
+      "disclosure": "open",
+      "phase_affinity": ["checkin"],
+      "source": "haben wir quasi im Zug erledigt, der 23. steht im Kalender"
+    },
+    {
+      "id": "F1",
+      "text": "Der Fokus (Termin beim Abschied festmachen) wurde quasi im Zug erledigt: der 23. steht im Kalender — das hat sie die ganze Woche getragen.",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["checkin"],
+      "source": "haben wir quasi im Zug erledigt, der 23. steht im Kalender"
+    },
+    {
+      "id": "F2",
+      "text": "Tom hat ihr Dienstag nach dem Fußball todmüde noch eine Sprachnachricht geschickt — sie hat sie sich zweimal angehört; solche kleinen Sachen tragen sie gerade.",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["checkin"],
+      "source": "Dass du mir Dienstag nach dem Fußball noch eine Sprachnachricht geschickt hast, obwohl du todmüde warst – die habe ich mir zweimal angehört."
+    },
+    {
+      "id": "F3",
+      "text": "Der Relaunch frisst sie auf: fast jeden Abend bis acht in der Agentur, danach ist sie 'nur noch Hülle'; die Chats sind wieder funktional geworden (Zug, Termine, gute Nacht).",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["main_work"],
+      "source": "ich sitze fast jeden Abend bis acht in der Agentur und danach bin ich nur noch Hülle"
+    },
+    {
+      "id": "F4",
+      "text": "Sie fühlt sich einsam: vermisst Tom, obwohl sie ständig schreiben — ein leises Ziehen, vor allem abends; nicht dramatisch, aber da. Sie kann Erschöpfung und Einsamkeit schlecht auseinanderhalten.",
+      "weight": "hard",
+      "disclosure": "if_probed",
+      "phase_affinity": ["main_work"],
+      "source": "Einsam trifft es schon, glaube ich. Nicht dramatisch, aber es ist da, so ein leises Ziehen, vor allem abends."
+    },
+    {
+      "id": "F5",
+      "text": "Sie braucht diese Woche vor allem Schlaf und Nachsicht, wenn sie kurz angebunden ist.",
+      "weight": "light",
+      "disclosure": "open",
+      "phase_affinity": ["main_work"],
+      "source": "Diese Woche ehrlich gesagt vor allem Schlaf und ein bisschen Nachsicht, wenn ich kurz angebunden bin."
+    },
+    {
+      "id": "F6",
+      "text": "Das Wochenende am 23. ist ihr Anker — sie bittet ausdrücklich darum, es zu schützen, egal was Toms Firma macht.",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["main_work"],
+      "source": "Und ich brauche unser Wochenende am 23. wie einen Anker – bitte lass uns das schützen, egal was eure Firma macht."
+    },
+    {
+      "id": "F7",
+      "text": "Sie freut sich auf Toms Besuch Freitag in einer Woche: der Portugiese ist reserviert, Jule will ihn kurz sehen, der Samstag bleibt für die beiden frei.",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["closing"],
+      "source": "Ich habe den Portugiesen reserviert und Jule will dich unbedingt kurz sehen, aber ich halte uns den Samstag frei, versprochen."
+    },
+    {
+      "id": "F8",
+      "text": "Zu klären: Tom soll so früh wie möglich sagen, ob der 23. sicher steht (Reservierung, heiße Kohlen), und wer im Februar zuerst fährt.",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["closing"],
+      "source": "Sag mir bitte so früh wie möglich, ob der 23. sicher steht, wegen der Reservierung"
+    }
+  ]
+}

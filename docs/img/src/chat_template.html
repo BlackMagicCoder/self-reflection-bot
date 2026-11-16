@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sitzung – fiktives Beispiel</title>
+<!-- Template für docs/img/chat-session.png; befüllt von scripts/make_readme_assets.py.
+     {{PANELS}} wird durch die gerenderten Chat-Spalten ersetzt. -->
+<style>
+  :root {
+    --page: #f4f4f5;
+    --ink: #18181b;
+    --muted: #71717a;
+    --chat-bg: #dde5d6;
+    --bot-bubble: #ffffff;
+    --user-bubble: #e3f6d2;
+    --time: #8a9a86;
+    --btn: rgba(46, 70, 52, 0.62);
+    --btn-pressed: rgba(32, 52, 38, 0.92);
+    --frame: #d4d4d8;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--page); }
+  body {
+    font-family: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+    color: var(--ink);
+    width: 960px;
+    padding: 28px 32px 24px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .row { display: flex; gap: 32px; align-items: stretch; }
+  .col { flex: 1 1 0; display: flex; flex-direction: column; min-width: 0; }
+  .caption { font-size: 15px; font-weight: 600; color: var(--ink); margin: 0 0 10px 4px; letter-spacing: .1px; }
+  .phone {
+    flex: 1; display: flex; flex-direction: column;
+    border: 1px solid var(--frame); border-radius: 18px; overflow: hidden;
+    background: var(--chat-bg);
+    box-shadow: 0 1px 2px rgba(0,0,0,.04), 0 8px 24px rgba(0,0,0,.06);
+  }
+  .bar {
+    background: #ffffff; border-bottom: 1px solid #e4e4e7;
+    padding: 11px 16px 10px;
+  }
+  .bar .name { font-size: 15px; font-weight: 600; }
+  .bar .sub { font-size: 12px; color: var(--muted); margin-top: 1px; }
+  .chat { flex: 1; padding: 14px 12px 16px; display: flex; flex-direction: column; gap: 7px; }
+  .msg { display: flex; flex-direction: column; max-width: 84%; }
+  .msg.bot { align-self: flex-start; }
+  .msg.user { align-self: flex-end; align-items: flex-end; }
+  .bubble {
+    position: relative; padding: 7px 11px 6px; border-radius: 14px;
+    font-size: 14px; line-height: 1.38; white-space: pre-wrap; word-wrap: break-word;
+    box-shadow: 0 1px 1px rgba(0,0,0,.08);
+  }
+  .bot .bubble { background: var(--bot-bubble); border-bottom-left-radius: 5px; }
+  .user .bubble { background: var(--user-bubble); border-bottom-right-radius: 5px; }
+  .time { display: block; text-align: right; font-size: 11px; color: var(--time); margin-top: 2px; }
+  .bubble b { font-weight: 600; }
+  .buttons { display: flex; gap: 4px; margin-top: 4px; width: 100%; }
+  .buttons span {
+    flex: 1; text-align: center; color: #fff; background: var(--btn);
+    border-radius: 9px; padding: 7px 6px; font-size: 13.5px; font-weight: 500;
+  }
+  .buttons span.pressed { background: var(--btn-pressed); box-shadow: inset 0 0 0 2px rgba(255,255,255,.55); }
+  .tap { font-size: 11.5px; color: #4b5d4c; margin: 4px 0 0 4px; font-style: italic; }
+  .foot { margin-top: 16px; font-size: 12.5px; color: var(--muted); line-height: 1.45; }
+</style>
+</head>
+<body>
+  <div class="row">
+{{PANELS}}
+  </div>
+  <p class="foot">{{FOOTNOTE}}</p>
+  <script>
+    // Höhe für den zweiten Edge-Lauf (Screenshot) messbar machen, siehe make_readme_assets.py.
+    document.body.setAttribute("data-h", Math.ceil(document.body.getBoundingClientRect().height));
+  </script>
+</body>
+</html>

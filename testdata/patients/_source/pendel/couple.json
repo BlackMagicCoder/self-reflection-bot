@@ -1,0 +1,14 @@
+{
+  "id": "pendel",
+  "partner_a": {
+    "name": "Lea",
+    "age": 31,
+    "voice": "Schreibt lang und verschachtelt: 3 bis 6 Sätze pro Antwort sind ihr Normalmaß, mit Einschüben, Gedankenstrichen und Rückversicherungen ('oder?', 'verstehst du?'). Sorgt sich schnell, denkt schriftlich laut und relativiert die eigene Wahrnehmung, während sie sie ausbreitet. In Sprachnachrichten mäandert sie: Füllwörter, angefangene Sätze, gefühlsnahe Bilder, aber sauber interpunktiert."
+  },
+  "partner_b": {
+    "name": "Tom",
+    "age": 34,
+    "voice": "Antwortet in ein bis zwei kurzen Hauptsätzen, manchmal mit einem einzigen Wort; sachlich, faktenorientiert, ohne Ausschmückung — auch in guten Wochen. Gefühle benennt er selten direkt; Zuneigung und Reue zeigen sich in Handlungen, trockenem Humor und knappen Zugeständnissen. Auf Nachfragen wird er nur wenig ausführlicher, bleibt aber präzise; Sprachnachrichten schickt er praktisch nie."
+  },
+  "scenario": "Fernbeziehung Hamburg–München mit asymmetrischem Engagement. W1–3 Routine und Terminstress, W4 sagt Tom den geplanten Hamburg-Besuch kurzfristig per Textnachricht ab (Kränkung), W5–6 Auseinanderdriften (Tom einsilbig, Lea lang und besorgt), W7 klärendes Gespräch mit beschlossenem wöchentlichem Video-Date, W8–10 langsame Wiederannäherung, W11 konkretes Gespräch über das Zusammenziehen (Hamburg-Büro von Toms Firma), W12 hoffnungsvoll. Kernmerkmal für Evals: Verbosity-Asymmetrie — Lea 3–6 Sätze, Tom 1–2, konstant über den ganzen Bogen."
+}

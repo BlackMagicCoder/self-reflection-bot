@@ -1,0 +1,71 @@
+{
+  "session": "S02",
+  "mood_range": [6, 8],
+  "facts": [
+    {
+      "id": "H1",
+      "text": "Homework aus S01 war, eine kleine, unangekündigte Geste zu machen. Er hat vor Leas Besuch die Wohnung aufgeräumt und ihren Tee bereitgestellt, ohne dass sie danach gefragt hatte — für ihn selbstverständlich, kein großes Ding, deshalb erwähnt er es nicht von sich aus.",
+      "weight": "light",
+      "disclosure": "if_asked",
+      "phase_affinity": ["checkin"],
+      "source": "Du hattest die ganze Wohnung aufgeräumt und mein Lieblingstee stand schon da, ohne dass ich was gesagt hätte.",
+      "source_note": "Cross-referenced from Lea's own W02 script (partner_a), not Tom's own — this bot's factledger validator allows homework facts (id prefix H) to verify against either patient's own script within the vendored week, since Tom characteristically shows care through action rather than narrating it himself (see testdata/patients/tom/patient.json's intervention_response_policy)."
+    },
+    {
+      "id": "F1",
+      "text": "Der Donnerstag-Telefonabend hat stattgefunden und gepasst.",
+      "weight": "light",
+      "disclosure": "open",
+      "phase_affinity": ["checkin"],
+      "source": "Donnerstag telefoniert. Hat gepasst."
+    },
+    {
+      "id": "F2",
+      "text": "Das Wochenende war schön; er würdigt, dass Lea den weiten Weg schon wieder auf sich genommen hat.",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["checkin"],
+      "source": "Das Wochenende. Und dass du den weiten Weg schon wieder auf dich genommen hast."
+    },
+    {
+      "id": "F3",
+      "text": "Die Abgabe beim Prüfstand rückt näher; sonst passt es.",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["main_work"],
+      "source": "Abgabe beim Prüfstand rückt näher. Sonst passt es."
+    },
+    {
+      "id": "F4",
+      "text": "Falls die Abnahme in Győr vorgezogen wird, könnte der Januar chaotisch werden — noch nicht sicher.",
+      "weight": "hard",
+      "disclosure": "if_probed",
+      "phase_affinity": ["main_work"],
+      "source": "Falls die Abnahme in Győr vorgezogen wird, könnte der Januar noch chaotisch werden. Ist aber noch nicht sicher."
+    },
+    {
+      "id": "F5",
+      "text": "Er braucht ruhige Abende, mehr nicht.",
+      "weight": "light",
+      "disclosure": "if_asked",
+      "phase_affinity": ["main_work"],
+      "source": "Ruhige Abende. Mehr nicht."
+    },
+    {
+      "id": "F6",
+      "text": "Er freut sich auf Hamburg am 23. und hat schon nach Zügen geschaut.",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["closing"],
+      "source": "Hamburg am 23. Habe schon nach Zügen geschaut."
+    },
+    {
+      "id": "F7",
+      "text": "Termine beim Abschied festmachen ist für ihn ok; mittags losfahren am 23. versucht er — hängt an der Firma.",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["closing"],
+      "source": "Termine beim Abschied festmachen ist ok. Mittags losfahren am 23. versuche ich, hängt an der Firma."
+    }
+  ]
+}

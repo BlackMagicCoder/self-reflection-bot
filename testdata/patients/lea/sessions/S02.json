@@ -1,0 +1,94 @@
+{
+  "session": "S02",
+  "mood_range": [4, 8],
+  "facts": [
+    {
+      "id": "H1",
+      "text": "Homework aus S01 war, den auslösenden Gedanken kurz zu benennen, bevor das Kopfrechnen losgeht. Teilweise geschafft: im Zug zurück konnte sie einmal benennen, dass es eher an der Trennung als an einem echten Problem lag ('eher, weil es so schön war und dann halt wieder vorbei') — an anderer Stelle ist der alte Rechenmodus trotzdem wieder angesprungen ('mein Kopf fängt an zu rechnen, wie oft wir uns dieses Jahr sehen').",
+      "weight": "light",
+      "disclosure": "open",
+      "phase_affinity": ["checkin"],
+      "source": "Und ich hab im Zug zurück ein bisschen geweint, aber eher, weil es so schön war und dann halt wieder vorbei, verstehst du?"
+    },
+    {
+      "id": "F1",
+      "text": "Der vorgenommene zweite Telefonabend am Donnerstag hat diese Woche geklappt — kurz, aber eine echte Stimme statt Chat; das hat ihr gutgetan.",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["checkin"],
+      "source": "Wir hatten uns ja den Donnerstag als zweiten Telefonabend vorgenommen, und das hat diese Woche tatsächlich geklappt"
+    },
+    {
+      "id": "F2",
+      "text": "Das Wochenende in München war schön: Lenbachhaus, danach das vietnamesische Lokal, und Tom hatte echte Blumen auf dem Tisch.",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["checkin"],
+      "source": "wir waren ja im Lenbachhaus und danach in dem vietnamesischen Laden, und du hattest sogar Blumen auf dem Tisch"
+    },
+    {
+      "id": "F3",
+      "text": "Tom hatte die ganze Wohnung aufgeräumt und ihr Lieblingstee stand bereit, ohne dass sie etwas gesagt hätte — das hat sie gerührt.",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["checkin"],
+      "source": "Du hattest die ganze Wohnung aufgeräumt und mein Lieblingstee stand schon da, ohne dass ich was gesagt hätte."
+    },
+    {
+      "id": "F4",
+      "text": "Im Zug zurück hat sie ein bisschen geweint — eher weil es so schön war und dann wieder vorbei.",
+      "weight": "hard",
+      "disclosure": "if_probed",
+      "phase_affinity": ["checkin", "main_work"],
+      "source": "Und ich hab im Zug zurück ein bisschen geweint, aber eher, weil es so schön war und dann halt wieder vorbei, verstehst du?"
+    },
+    {
+      "id": "F5",
+      "text": "Das Abschiednehmen am Bahnhof wird nicht leichter; im Zug fängt ihr Kopf an zu rechnen, wie oft sie sich dieses Jahr sehen — die Zahl macht sie fertig.",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["main_work"],
+      "source": "dann sitze ich sechs Stunden im Zug und mein Kopf fängt an zu rechnen, wie oft wir uns dieses Jahr eigentlich sehen, und das ist so eine Zahl, die macht mich fertig"
+    },
+    {
+      "id": "F6",
+      "text": "In der Agentur hat Sanne den Relaunch-Zeitplan nochmal angezogen — es war viel diese Woche.",
+      "weight": "light",
+      "disclosure": "if_asked",
+      "phase_affinity": ["main_work"],
+      "source": "Sanne hat den Zeitplan für den Relaunch nochmal angezogen"
+    },
+    {
+      "id": "F7",
+      "text": "Sie bereut nichts — aber die Wochenenden sind ein Kontrastprogramm, der Alltag danach wirkt doppelt grau.",
+      "weight": "hard",
+      "disclosure": "if_probed",
+      "phase_affinity": ["main_work"],
+      "source": "es ist eher, dass die Wochenenden so ein Kontrastprogramm sind und der Alltag danach doppelt grau wirkt"
+    },
+    {
+      "id": "F8",
+      "text": "Sie braucht die Sicherheit, dass der nächste Besuchstermin schon steht, bevor der Abschied kommt — auch wenn das 'kontrollig' klingen mag.",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["main_work"],
+      "source": "ich brauche einfach die Sicherheit, dass der nächste Termin steht, bevor der Abschied kommt"
+    },
+    {
+      "id": "F9",
+      "text": "Sie freut sich auf Toms Besuch am 23. (sie denkt an den Portugiesen an der Elbe) und auf Yoga mit Jule am Donnerstag.",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["closing"],
+      "source": "ich hab schon einen Tisch bei dem Portugiesen an der Elbe im Kopf"
+    },
+    {
+      "id": "F10",
+      "text": "Absprache-Wunsch: Besuche künftig immer direkt beim Abschied fürs nächste Mal terminieren; außerdem soll Tom schauen, ob er am 23. schon mittags losfahren kann.",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["closing"],
+      "source": "Können wir festmachen, dass wir Besuche immer direkt beim Abschied für das nächste Mal terminieren?"
+    }
+  ]
+}

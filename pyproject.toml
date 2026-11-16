@@ -1,0 +1,28 @@
+[project]
+name = "self-reflection"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "python-telegram-bot>=20.0",
+    "groq>=0.9.0",
+    "openai>=1.0.0",
+    "python-dotenv>=1.0.0",
+    "apscheduler>=3.10.0",
+    "matplotlib>=3.8.0",
+    "cryptography>=50.0.0",
+]
+
+[tool.uv]
+package = false
+# Security floors for transitive deps (2026-10-22); uv honours these when resolving.
+constraint-dependencies = [
+    "anyio>=4.14.2",
+    "certifi>=2026.10.19",
+    "idna>=3.15",
+]
+
+[tool.pytest.ini_options]
+markers = [
+    "live_eval: hits the real Groq API (costs money, can be flaky) - excluded from the default run; see item 40c",
+]
+addopts = "-m \"not live_eval\""

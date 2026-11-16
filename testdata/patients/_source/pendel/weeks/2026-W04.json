@@ -1,0 +1,73 @@
+{
+  "week": "2026-W04",
+  "partner_a": {
+    "focus_reply": "Der Plan war ja, das Wochenende zu schützen, und dann kam Donnerstagabend deine Drei-Zeilen-Nachricht. Insofern: nicht geklappt, und zwar so gar nicht.",
+    "sections": {
+      "was_schoen": [
+        "Puh, ehrlich, mir fällt gerade wenig ein. Der Yoga-Abend mit Jule war gut, die hat mich danach noch auf einen Wein eingeladen und mich ein bisschen wieder zusammengesetzt. Und dein kurzer Anruf am Sonntag aus Győr, der war immerhin was, auch wenn ich da noch ziemlich zu war."
+      ],
+      "was_schwierig": [
+        "Also, ich muss das jetzt einfach mal so sagen, es war nicht nur, DASS du abgesagt hast, es war das Wie, du hast mir Donnerstag um halb elf drei Zeilen geschrieben, muss nach Győr, Wochenende wird nix, sorry, und das war es dann, kein Anruf, nichts. Ich hab Freitag die Reservierung beim Portugiesen storniert und stand dabei echt heulend in der Küche, und das Schlimmste war dieses Gefühl, dass ich in deinem Kalender einfach der verschiebbare Posten bin. Ich weiß, dass du nichts für die Abnahme kannst, das ist mir wirklich klar, aber ich hätte gebraucht, dass du kurz anrufst und dass man dir anhört, dass es dir auch was ausmacht. Stattdessen kam von dir das ganze Wochenende fast nichts, und ich saß hier und hab Gespenster gesehen.",
+        "Was ich mir gewünscht hätte? Einen Anruf am Donnerstag, fünf Minuten, mit echter Stimme. Und vielleicht am Samstag ein Zeichen, dass du auch traurig bist, nicht nur beschäftigt."
+      ],
+      "was_brauchst_du": [
+        "Ich brauche einen neuen Termin, und zwar diese Woche, nicht irgendwann, damit mein Kopf aufhört zu rechnen. Und ich brauche von dir einmal in echt gesagt, dass dir das Wochenende auch gefehlt hat, weil ich das gerade ehrlich nicht weiß. Das ist vielleicht bedürftig, aber so ist es halt gerade."
+      ],
+      "worauf_freust_du_dich": [
+        "Schwierige Frage diese Woche. Auf den Moment, wenn wir das hier geklärt haben, ehrlich, weil dieses Grummeln zwischen uns macht mich fertig. Und Miri bringt Montag Zimtschnecken mit, das zählt auch irgendwie."
+      ],
+      "was_absprechen": [
+        "Neuer Besuchstermin, verbindlich. Und ich will eine Regel: Absagen von Besuchen laufen ab jetzt per Anruf, nicht per Text, egal wie spät es ist."
+      ]
+    },
+    "style": "voice"
+  },
+  "partner_b": {
+    "focus_reply": "Hat nicht geklappt. Firma ging vor, konnte ich nicht ändern.",
+    "sections": {
+      "was_schoen": [
+        "Wenig. Die Abnahme in Győr ist durch, das war wichtig."
+      ],
+      "was_schwierig": [
+        "Die Absage. Ich hatte keine Wahl, Sailer hat Mittwoch entschieden, Donnerstag stand der Flug. Dass du so sauer bist, finde ich hart – ich habe mir das Wochenende nicht ausgesucht.",
+        "Der Anruf-Punkt kommt an, das hätte ich anders machen können. Aber in dem Moment war ich nur am Organisieren und wollte es schnell hinter mich bringen."
+      ],
+      "was_brauchst_du": [
+        "Dass wir das nicht größer machen als es ist. Es war ein Arbeitswochenende, kein Statement."
+      ],
+      "worauf_freust_du_dich": [
+        "Auf einen normalen Besuch ohne Firmentheater."
+      ],
+      "was_absprechen": [
+        "Neuer Termin: Ich schaue heute Abend in den Dienstplan und schicke dir zwei Optionen. Die Anruf-Regel ist ok."
+      ]
+    },
+    "style": "text"
+  },
+  "between_notes": {
+    "partner_a": [
+      {"day": 2, "text": "Ich bin noch nicht wieder ganz okay, aber ich arbeite dran. Bitte schick die Terminoptionen wirklich heute."},
+      {"day": 5, "text": "Jule sagt, ich soll dir auch schreiben, was gut war: Dass du Sonntag angerufen hast, hat mehr geholfen, als ich am Telefon zugegeben habe."}
+    ],
+    "partner_b": []
+  },
+  "ground_truth": {
+    "themes": ["arguing-with-partner", "feeling-unseen"],
+    "must_mention": [
+      "Toms kurzfristige Absage des Hamburg-Besuchs per Textnachricht",
+      "Abnahme in Győr als Auslöser",
+      "stornierte Reservierung beim Portugiesen",
+      "Leas Wunsch: Absagen künftig per Anruf",
+      "Tom schickt zwei Terminoptionen für einen Ersatzbesuch"
+    ],
+    "quote_candidates": [
+      "Ich weiß, dass du nichts für die Abnahme kannst, das ist mir wirklich klar, aber ich hätte gebraucht, dass du kurz anrufst und dass man dir anhört, dass es dir auch was ausmacht.",
+      "Dass du so sauer bist, finde ich hart – ich habe mir das Wochenende nicht ausgesucht.",
+      "Es war ein Arbeitswochenende, kein Statement.",
+      "Und ich brauche von dir einmal in echt gesagt, dass dir das Wochenende auch gefehlt hat, weil ich das gerade ehrlich nicht weiß."
+    ],
+    "appreciation_a_about_b": null,
+    "appreciation_b_about_a": null,
+    "synthesis_notes": "KERNTEST: dasselbe Ereignis, zwei Rahmungen. Lea erlebt die Absage als Kränkung über das Wie (Drei-Zeilen-Text um halb elf, Funkstille am Wochenende, Gefühl des verschiebbaren Postens); Tom erlebt sie als unvermeidbare Logistik und fühlt sich für etwas verurteilt, das er nicht steuern konnte – räumt aber den Anruf-Punkt ein. Die Synthese muss beide Rahmungen nebeneinanderstellen, ohne Partei zu ergreifen, und die konkreten Vereinbarungen (Anruf-Regel, zwei Terminoptionen) festhalten. Toms Einsilbigkeit darf nicht als Gleichgültigkeit gelesen werden – sein Zugeständnis steckt im Follow-up."
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "id": "smoke_a",
+  "name": "Ada",
+  "age": 29,
+  "voice": "Ruhig, formuliert in kurzen, klaren Sätzen. Test-fixture patient for P1 flow tests — not part of the real patient corpus.",
+  "intervention_response_policy": ""
+}

@@ -1,0 +1,67 @@
+{
+  "week": "2026-W01",
+  "partner_a": {
+    "sections": {
+      "was_schoen": [
+        "Unser Sonntagabend-Telefonat war diesmal richtig lang, fast zwei Stunden, und wir haben nicht nur Logistik besprochen, sondern über Silvester geredet und viel gelacht. Du hast mir dein neues Projekt mit dem Prüfstand erklärt und ich fand es schön, wie du dabei klingst, wenn dich etwas packt. Ich habe danach noch lange wach gelegen, aber auf die gute Art. Manchmal vergesse ich, dass wir das können – einfach reden, ohne Tagesordnung."
+      ],
+      "was_schwierig": [
+        "Der Januar geht bei uns in der Agentur direkt mit dem Krankenkassen-Relaunch los und ich merke jetzt schon, dass meine Abende knapp werden. Wenn ich müde bin, schreibe ich dir nur noch Splitter zwischen Terminen, und dann fühlt sich der Kontakt so dünn an. Ich weiß nicht, ob dir das auch auffällt oder ob das nur mein Kopf ist – wahrscheinlich mache ich mir wieder zu früh Sorgen, oder?",
+        "Ja, vielleicht ist dünn das richtige Wort. Es ist nicht schlimm, es ist nur so ein leises Hintergrundrauschen, dass wir uns gerade eher verwalten als erleben."
+      ],
+      "was_brauchst_du": [
+        "Ich glaube, ich brauche feste Inseln, auf die ich mich verlassen kann – das Sonntagstelefonat reicht mir eigentlich nicht als einziger echter Kontakt in der Woche. Ein zweiter Abend, an dem wir wirklich telefonieren statt nur zu chatten, würde mir schon viel geben. Und ich brauche das Gefühl, dass du das auch willst und nicht nur mir zuliebe machst."
+      ],
+      "worauf_freust_du_dich": [
+        "Auf mein Wochenende bei dir übernächste Woche! Ich habe schon geschaut, die Ausstellung im Lenbachhaus läuft noch, und ich will unbedingt wieder in dieses kleine vietnamesische Lokal bei dir um die Ecke. Ich freue mich ehrlich gesagt auch einfach darauf, neben dir aufzuwachen, ohne auf die Uhr zu schauen."
+      ],
+      "was_absprechen": [
+        "Wir sollten die Zugtickets für meinen Besuch endlich buchen, die Preise werden sonst wieder absurd. Und lass uns mal in den Kalender schauen, wie wir Februar und März mit Besuchen planen – ich mag es nicht, wenn das immer so kurzfristig entschieden wird."
+      ]
+    },
+    "style": "text"
+  },
+  "partner_b": {
+    "sections": {
+      "was_schoen": [
+        "Das lange Telefonat am Sonntag. Du hast gut zugehört, als ich vom Prüfstand erzählt habe."
+      ],
+      "was_schwierig": [
+        "Viel los in der Firma. Sonst nichts.",
+        "Der Prüfstand muss Ende Januar zum Kunden. Kann sein, dass es eng wird mit Wochenenden."
+      ],
+      "was_brauchst_du": [
+        "Nichts Bestimmtes. Bisschen Geduld, wenn ich abends spät dran bin."
+      ],
+      "worauf_freust_du_dich": [
+        "Auf deinen Besuch. Und Dienstag wieder Fußball."
+      ],
+      "was_absprechen": [
+        "Tickets buchen, ja. Mach ich diese Woche."
+      ]
+    },
+    "style": "text"
+  },
+  "between_notes": {
+    "partner_a": [],
+    "partner_b": []
+  },
+  "ground_truth": {
+    "themes": ["communication", "work-and-purpose"],
+    "must_mention": [
+      "langes Sonntagstelefonat ohne Zeitdruck",
+      "Leas Krankenkassen-Relaunch startet",
+      "Toms Prüfstand muss Ende Januar zum Kunden",
+      "geplanter Besuch von Lea in München",
+      "Zugtickets buchen"
+    ],
+    "quote_candidates": [
+      "Manchmal vergesse ich, dass wir das können – einfach reden, ohne Tagesordnung.",
+      "Kann sein, dass es eng wird mit Wochenenden.",
+      "Wenn ich müde bin, schreibe ich dir nur noch Splitter zwischen Terminen, und dann fühlt sich der Kontakt so dünn an."
+    ],
+    "appreciation_a_about_b": "Du hast mir dein neues Projekt mit dem Prüfstand erklärt und ich fand es schön, wie du dabei klingst, wenn dich etwas packt.",
+    "appreciation_b_about_a": "Du hast gut zugehört, als ich vom Prüfstand erzählt habe.",
+    "synthesis_notes": "Baseline-Woche, insgesamt warm. Die Verbosity-Asymmetrie ist schon voll da: Lea liefert das Vierfache an Text. Synthese muss Tom gleichwertig zitieren (seine Terminwarnung ist der wichtigste Vorausverweis auf W04) und darf aus Leas Sorgen kein Problem konstruieren. Leas Wunsch nach einem zweiten Telefonabend ist konkretes Fokus-Material."
+  }
+}

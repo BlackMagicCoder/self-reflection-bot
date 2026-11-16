@@ -1,0 +1,36 @@
+{
+  "_hinweis": "Handkuratiertes, vollständig fiktives Beispiel für das README-Bild docs/img/chat-session.png. Angelehnt an die fiktive Test-Persona 'Tom' (testdata/patients/tom/, Herkunft: testdata/patients/_source/pendel/PROVENANCE.md). Kein echter Gesprächsverlauf, kein Simulator-Transkript. Die festen Bedienelemente (Buttons, Rückfragen, Format der Zusammenfassung) setzt scripts/make_readme_assets.py aus den Texten in bot.py ein; hier stehen nur die frei formulierten Gesprächsinhalte.",
+  "bot_name": "Reflexions-Bot",
+  "model_label": "Ansatz: CBT",
+  "panels": [
+    {
+      "caption": "1 · Check-in und Gespräch",
+      "messages": [
+        {"from": "bot", "time": "19:02", "text": "Hallo Tom, schön, dass du da bist. Wie ist es dir seit unserem letzten Gespräch ergangen – und was möchtest du heute mitbringen?"},
+        {"from": "user", "time": "19:03", "text": "Viel Arbeit. Und Stress mit Lea."},
+        {"from": "bot", "time": "19:03", "text": "Danke, dass du das so direkt sagst. Was ist zwischen euch passiert?"},
+        {"from": "user", "time": "19:05", "text": "Sie meinte am Telefon, ich sei wieder abwesend. Ich war nur müde."},
+        {"from": "bot", "time": "19:05", "text": "Was ging dir durch den Kopf, als sie das gesagt hat?"},
+        {"from": "user", "time": "19:06", "text": "Dass ich es eh nicht richtig machen kann."},
+        {"from": "bot", "time": "19:07", "text": "Das ist ein ziemlich hartes Urteil über dich selbst. Gibt es etwas aus dieser Woche, das dagegen spricht?"},
+        {"from": "user", "time": "19:08", "text": "Ich hab die Tickets für ihren Besuch gebucht. Ohne dass sie fragen musste."}
+      ]
+    },
+    {
+      "caption": "2 · Abschluss nur mit Zustimmung",
+      "messages": [
+        {"from": "bot", "time": "19:12", "text": "Was nimmst du aus heute mit?"},
+        {"from": "user", "time": "19:13", "text": "Dass ich mehr mache, als ich sage. Und dass sie das Sagen auch braucht."},
+        {"from": "bot", "time": "19:14", "text": "Das klingt nach einem guten Punkt, um für heute abzuschließen – wenn es für dich passt. Eine Idee, ganz freiwillig: Erzähl Lea diese Woche einmal am Tag in einem Satz, wie dein Tag war."},
+        {"from": "bot", "time": "19:14", "ui": "end_confirmation", "pressed": 0},
+        {"from": "bot", "time": "19:15", "ui": "summary", "summary": {
+          "main_topic": "Kurze Antworten am Telefon und der Gedanke „Ich kann es eh nicht richtig machen“",
+          "key_insights": "Verbindlichkeit zeigt sich bei Tom in Handlungen (Tickets gebucht) – das ist ein Gegenbeleg zum Pauschalurteil.",
+          "homework": "Lea einmal am Tag in einem Satz erzählen, wie der Tag war.",
+          "follow_up": "Wie Lea und Tom die kurzen Updates erlebt haben."
+        }},
+        {"from": "bot", "time": "19:15", "ui": "homework_question", "pressed": 0}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "session": "S01",
+  "mood_range": [6, 8],
+  "facts": [
+    {
+      "id": "F1",
+      "text": "Das lange Sonntagstelefonat war schön; Lea hat gut zugehört, als er vom Prüfstand erzählt hat.",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["checkin"],
+      "source": "Das lange Telefonat am Sonntag. Du hast gut zugehört, als ich vom Prüfstand erzählt habe."
+    },
+    {
+      "id": "F2",
+      "text": "Viel los in der Firma — mehr sagt er zunächst nicht dazu.",
+      "weight": "light",
+      "disclosure": "open",
+      "phase_affinity": ["main_work"],
+      "source": "Viel los in der Firma. Sonst nichts."
+    },
+    {
+      "id": "F3",
+      "text": "Der Prüfstand muss Ende Januar zum Kunden; es kann eng werden mit den Wochenenden.",
+      "weight": "hard",
+      "disclosure": "if_probed",
+      "phase_affinity": ["main_work"],
+      "source": "Der Prüfstand muss Ende Januar zum Kunden. Kann sein, dass es eng wird mit Wochenenden."
+    },
+    {
+      "id": "F4",
+      "text": "Er braucht nichts Bestimmtes — nur ein bisschen Geduld, wenn er abends spät dran ist.",
+      "weight": "light",
+      "disclosure": "if_asked",
+      "phase_affinity": ["main_work"],
+      "source": "Nichts Bestimmtes. Bisschen Geduld, wenn ich abends spät dran bin."
+    },
+    {
+      "id": "F5",
+      "text": "Er freut sich auf Leas Besuch und auf Fußball am Dienstag.",
+      "weight": "light",
+      "disclosure": "open",
+      "phase_affinity": ["closing"],
+      "source": "Auf deinen Besuch. Und Dienstag wieder Fußball."
+    },
+    {
+      "id": "F6",
+      "text": "Er übernimmt das Buchen der Zugtickets noch diese Woche.",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["closing"],
+      "source": "Tickets buchen, ja. Mach ich diese Woche."
+    }
+  ]
+}

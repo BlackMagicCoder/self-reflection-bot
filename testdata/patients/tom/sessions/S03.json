@@ -1,0 +1,79 @@
+{
+  "session": "S03",
+  "mood_range": [4, 7],
+  "facts": [
+    {
+      "id": "H1",
+      "text": "Homework aus S02 war, auch mal explizit zu sagen (nicht nur zu zeigen), wenn ihm etwas fehlt oder wichtig ist. Ansatzweise geschafft: Dienstag nach dem Fußball hat er, todmüde, trotzdem noch eine Sprachnachricht geschickt statt es einfach zu lassen — für ihn schon eine Ansage, auch wenn er es selbst nicht so nennen würde.",
+      "weight": "light",
+      "disclosure": "if_asked",
+      "phase_affinity": ["checkin"],
+      "source": "Dass du mir Dienstag nach dem Fußball noch eine Sprachnachricht geschickt hast, obwohl du todmüde warst – die habe ich mir zweimal angehört.",
+      "source_note": "Cross-referenced from Lea's own W03 script (partner_a) — Tom's own script doesn't narrate the gesture himself, consistent with his intervention_response_policy."
+    },
+    {
+      "id": "F1",
+      "text": "Der Besuchstermin steht: 23. Januar — für ihn ist der Fokus damit erledigt.",
+      "weight": "light",
+      "disclosure": "open",
+      "phase_affinity": ["checkin"],
+      "source": "Termin steht, 23. Januar. Insofern: erledigt."
+    },
+    {
+      "id": "F2",
+      "text": "Fußball am Dienstag: 7:3 gewonnen.",
+      "weight": "light",
+      "disclosure": "open",
+      "phase_affinity": ["checkin"],
+      "source": "Fußball am Dienstag, wir haben 7:3 gewonnen."
+    },
+    {
+      "id": "F3",
+      "text": "Leas Paket mit den Espressobohnen ist angekommen — er ist dankbar.",
+      "weight": "light",
+      "disclosure": "open",
+      "phase_affinity": ["checkin"],
+      "source": "Und dein Paket mit den Espressobohnen kam an – danke."
+    },
+    {
+      "id": "F4",
+      "text": "Stress mit der Abnahme: Sailer redet jetzt doch davon, dass Győr nächste Woche stattfindet.",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["main_work"],
+      "source": "Stress mit der Abnahme. Sailer redet jetzt doch von Győr nächste Woche."
+    },
+    {
+      "id": "F5",
+      "text": "Schlimmster Fall: Flug am Donnerstag und das Wochenende in Győr — sicher weiß er es erst Mittwoch.",
+      "weight": "hard",
+      "disclosure": "if_probed",
+      "phase_affinity": ["main_work"],
+      "source": "Heißt im schlimmsten Fall: Ich fliege Donnerstag und bin das Wochenende dort. Ich weiß es aber erst Mittwoch sicher."
+    },
+    {
+      "id": "F6",
+      "text": "Auf die Bedürfnis-Frage sagt er erst 'Nichts.' — auf Nachfrage: dass niemand sauer ist, wenn die Firma ihm dazwischenfunkt, denn das kann er nicht steuern.",
+      "weight": "hard",
+      "disclosure": "if_probed",
+      "phase_affinity": ["main_work"],
+      "source": "Na gut: dass niemand sauer ist, wenn die Firma mir dazwischenfunkt. Das kann ich nämlich nicht steuern."
+    },
+    {
+      "id": "F7",
+      "text": "Er freut sich auf Hamburg — wenn es klappt.",
+      "weight": "light",
+      "disclosure": "if_asked",
+      "phase_affinity": ["closing"],
+      "source": "Hamburg, wenn es klappt."
+    },
+    {
+      "id": "F8",
+      "text": "Er sagt Lea bis Mittwochabend Bescheid, ob der 23. steht.",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["closing"],
+      "source": "Ich sage dir bis Mittwochabend Bescheid wegen dem 23."
+    }
+  ]
+}

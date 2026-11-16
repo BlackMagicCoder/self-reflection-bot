@@ -1,0 +1,94 @@
+{
+  "session": "S04",
+  "mood_range": [2, 5],
+  "facts": [
+    {
+      "id": "H1",
+      "text": "Homework aus S03 war, frühzeitig zu sagen, wenn sie merkt, dass sie überlastet ist, statt es stumm auszuhalten. Nicht dazu gekommen — diese Woche hatte ohnehin kaum Kapazität für irgendetwas außer der Absage, ihr fiel selbst beim Rückblick kaum noch etwas ein ('Puh, ehrlich, mir fällt gerade wenig ein.').",
+      "weight": "light",
+      "disclosure": "open",
+      "phase_affinity": ["checkin"],
+      "source": "Puh, ehrlich, mir fällt gerade wenig ein."
+    },
+    {
+      "id": "F1",
+      "text": "Der Plan, das Wochenende zu schützen, ist gescheitert: Donnerstagabend kam Toms Drei-Zeilen-Absage — für sie ist der Fokus 'so gar nicht' geklappt.",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["main_work"],
+      "source": "dann kam Donnerstagabend deine Drei-Zeilen-Nachricht"
+    },
+    {
+      "id": "F2",
+      "text": "Der Yoga-Abend mit Jule war gut; Jule hat sie danach auf einen Wein eingeladen und sie 'wieder zusammengesetzt'.",
+      "weight": "light",
+      "disclosure": "open",
+      "phase_affinity": ["checkin"],
+      "source": "Der Yoga-Abend mit Jule war gut, die hat mich danach noch auf einen Wein eingeladen und mich ein bisschen wieder zusammengesetzt."
+    },
+    {
+      "id": "F3",
+      "text": "Toms kurzer Sonntagsanruf aus Győr 'war immerhin was' — auch wenn sie da noch ziemlich zu war.",
+      "weight": "light",
+      "disclosure": "if_asked",
+      "phase_affinity": ["checkin"],
+      "source": "Und dein kurzer Anruf am Sonntag aus Győr, der war immerhin was, auch wenn ich da noch ziemlich zu war."
+    },
+    {
+      "id": "F4",
+      "text": "Die eigentliche Kränkung ist das WIE der Absage: Donnerstag um halb elf drei Zeilen ('muss nach Győr, Wochenende wird nix, sorry'), kein Anruf — und dann fast Funkstille das ganze Wochenende.",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["main_work"],
+      "source": "du hast mir Donnerstag um halb elf drei Zeilen geschrieben, muss nach Győr, Wochenende wird nix, sorry, und das war es dann, kein Anruf, nichts"
+    },
+    {
+      "id": "F5",
+      "text": "Beim Stornieren der Portugiesen-Reservierung stand sie heulend in der Küche; am schlimmsten war das Gefühl, in Toms Kalender der verschiebbare Posten zu sein.",
+      "weight": "hard",
+      "disclosure": "if_probed",
+      "phase_affinity": ["main_work"],
+      "source": "Ich hab Freitag die Reservierung beim Portugiesen storniert und stand dabei echt heulend in der Küche"
+    },
+    {
+      "id": "F6",
+      "text": "Was sie sich rückblickend gewünscht hätte: einen Fünf-Minuten-Anruf am Donnerstag mit echter Stimme, und am Samstag ein Zeichen, dass Tom auch traurig ist — nicht nur beschäftigt.",
+      "weight": "hard",
+      "disclosure": "if_probed",
+      "phase_affinity": ["main_work"],
+      "source": "Einen Anruf am Donnerstag, fünf Minuten, mit echter Stimme. Und vielleicht am Samstag ein Zeichen, dass du auch traurig bist, nicht nur beschäftigt."
+    },
+    {
+      "id": "F7",
+      "text": "Sie weiß, dass Tom nichts für die Abnahme kann — das ist ihr wirklich klar; ihr Vorwurf richtet sich nicht gegen das Ob, sondern gegen das Wie.",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["main_work"],
+      "source": "Ich weiß, dass du nichts für die Abnahme kannst, das ist mir wirklich klar"
+    },
+    {
+      "id": "F8",
+      "text": "Sie braucht einen neuen, verbindlichen Termin noch DIESE Woche, damit ihr Kopf aufhört zu rechnen — und einmal in echt gesagt, dass Tom das Wochenende auch gefehlt hat, weil sie das gerade ehrlich nicht weiß.",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["main_work"],
+      "source": "Ich brauche einen neuen Termin, und zwar diese Woche, nicht irgendwann, damit mein Kopf aufhört zu rechnen."
+    },
+    {
+      "id": "F9",
+      "text": "Freuen ist diese Woche schwer: am ehesten auf den Moment, wenn das geklärt ist — und Miri bringt Montag Zimtschnecken mit.",
+      "weight": "light",
+      "disclosure": "open",
+      "phase_affinity": ["closing"],
+      "source": "Und Miri bringt Montag Zimtschnecken mit, das zählt auch irgendwie."
+    },
+    {
+      "id": "F10",
+      "text": "Absprache-Forderung: neuer Besuchstermin verbindlich, und eine neue Regel — Besuchs-Absagen laufen ab jetzt per Anruf, nicht per Text, egal wie spät.",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["closing"],
+      "source": "Und ich will eine Regel: Absagen von Besuchen laufen ab jetzt per Anruf, nicht per Text, egal wie spät es ist."
+    }
+  ]
+}

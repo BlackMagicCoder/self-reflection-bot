@@ -1,0 +1,7 @@
+{
+  "id": "smoke_b",
+  "name": "Ben",
+  "age": 41,
+  "voice": "Kurz angebunden, antwortet knapp. Test-fixture patient for P1 flow tests — not part of the real patient corpus.",
+  "intervention_response_policy": ""
+}

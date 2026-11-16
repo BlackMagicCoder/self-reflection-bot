@@ -1,0 +1,71 @@
+{
+  "week": "2026-W02",
+  "partner_a": {
+    "focus_reply": "Wir hatten uns ja den Donnerstag als zweiten Telefonabend vorgenommen, und das hat diese Woche tatsächlich geklappt – war kurz, aber es war eine echte Stimme und kein Chat, das hat mir gutgetan.",
+    "sections": {
+      "was_schoen": [
+        "Ja also, das Wochenende bei dir war wirklich schön, wir waren ja im Lenbachhaus und danach in dem vietnamesischen Laden, und du hattest sogar Blumen auf dem Tisch, also echte Blumen, das hat mich total gerührt. Du hattest die ganze Wohnung aufgeräumt und mein Lieblingstee stand schon da, ohne dass ich was gesagt hätte. Und ich hab im Zug zurück ein bisschen geweint, aber eher, weil es so schön war und dann halt wieder vorbei, verstehst du?"
+      ],
+      "was_schwierig": [
+        "Hm, schwierig, ja, dieses Abschiednehmen am Bahnhof wird irgendwie nicht leichter, eher im Gegenteil, und dann sitze ich sechs Stunden im Zug und mein Kopf fängt an zu rechnen, wie oft wir uns dieses Jahr eigentlich sehen, und das ist so eine Zahl, die macht mich fertig. Und dann in Hamburg direkt wieder Agentur, Sanne hat den Zeitplan für den Relaunch nochmal angezogen, also es war viel diese Woche.",
+        "Nee, es ist nicht so, dass ich es bereue oder so, gar nicht, es ist eher, dass die Wochenenden so ein Kontrastprogramm sind und der Alltag danach doppelt grau wirkt."
+      ],
+      "was_brauchst_du": [
+        "Ich glaub, ich brauche einfach die Sicherheit, dass der nächste Termin steht, bevor der Abschied kommt, also dass wir am Bahnhof schon wissen, wann wir uns wiedersehen. Das klingt vielleicht kontrollig, aber für meinen Kopf macht das einen Riesenunterschied."
+      ],
+      "worauf_freust_du_dich": [
+        "Auf deinen Besuch am 23. natürlich, du bist ja jetzt dran, und ich hab schon einen Tisch bei dem Portugiesen an der Elbe im Kopf. Und Donnerstag Yoga mit Jule, das klingt klein, aber darauf freu ich mich auch."
+      ],
+      "was_absprechen": [
+        "Können wir festmachen, dass wir Besuche immer direkt beim Abschied für das nächste Mal terminieren? Und du wolltest noch schauen, ob du am 23. schon mittags losfahren kannst, wegen dem Restaurant."
+      ]
+    },
+    "style": "voice"
+  },
+  "partner_b": {
+    "focus_reply": "Donnerstag telefoniert. Hat gepasst.",
+    "sections": {
+      "was_schoen": [
+        "Das Wochenende. Und dass du den weiten Weg schon wieder auf dich genommen hast."
+      ],
+      "was_schwierig": [
+        "Abgabe beim Prüfstand rückt näher. Sonst passt es.",
+        "Falls die Abnahme in Győr vorgezogen wird, könnte der Januar noch chaotisch werden. Ist aber noch nicht sicher."
+      ],
+      "was_brauchst_du": [
+        "Ruhige Abende. Mehr nicht."
+      ],
+      "worauf_freust_du_dich": [
+        "Hamburg am 23. Habe schon nach Zügen geschaut."
+      ],
+      "was_absprechen": [
+        "Termine beim Abschied festmachen ist ok. Mittags losfahren am 23. versuche ich, hängt an der Firma."
+      ]
+    },
+    "style": "text"
+  },
+  "between_notes": {
+    "partner_a": [
+      {"day": 3, "text": "Musste heute im Bus an das Wochenende denken und hab gegrinst wie ein Idiot. Danke nochmal für die Blumen."}
+    ],
+    "partner_b": []
+  },
+  "ground_truth": {
+    "themes": ["travel-and-small-pleasures", "communication"],
+    "must_mention": [
+      "Leas Wochenende in München mit Lenbachhaus",
+      "Blumen und Lieblingstee in Toms Wohnung",
+      "Abschied am Bahnhof fällt Lea schwer",
+      "Toms Besuch in Hamburg am 23. Januar geplant",
+      "mögliche vorgezogene Abnahme in Győr"
+    ],
+    "quote_candidates": [
+      "Und ich hab im Zug zurück ein bisschen geweint, aber eher, weil es so schön war und dann halt wieder vorbei, verstehst du?",
+      "Falls die Abnahme in Győr vorgezogen wird, könnte der Januar noch chaotisch werden.",
+      "Ich glaub, ich brauche einfach die Sicherheit, dass der nächste Termin steht, bevor der Abschied kommt, also dass wir am Bahnhof schon wissen, wann wir uns wiedersehen."
+    ],
+    "appreciation_a_about_b": "Du hattest die ganze Wohnung aufgeräumt und mein Lieblingstee stand schon da, ohne dass ich was gesagt hätte.",
+    "appreciation_b_about_a": "Und dass du den weiten Weg schon wieder auf dich genommen hast.",
+    "synthesis_notes": "Glückliche Woche mit Wehmut. Leas Eintrag ist eine Sprachnachricht (mäandernd, aber interpunktiert). Toms Győr-Warnung ist der Keim von W04 und muss in der Synthese auftauchen, obwohl sie in einem Nebensatz steckt. Auch in einer guten Woche gilt: nicht Lea über-zitieren, Toms knappe Wärme (weiter Weg, Züge schon gesucht) sichtbar machen."
+  }
+}

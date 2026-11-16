@@ -1,0 +1,72 @@
+{
+  "week": "2026-W03",
+  "partner_a": {
+    "focus_reply": "Wir wollten den nächsten Termin ja schon beim Abschied festmachen – haben wir quasi im Zug erledigt, der 23. steht im Kalender, und das hat mich die ganze Woche getragen.",
+    "sections": {
+      "was_schoen": [
+        "Dass du mir Dienstag nach dem Fußball noch eine Sprachnachricht geschickt hast, obwohl du todmüde warst – die habe ich mir zweimal angehört. Solche kleinen Sachen tragen mich gerade mehr, als du wahrscheinlich ahnst. Sonst war die Woche ehrlich gesagt vor allem Arbeit, aber das war ein Lichtblick."
+      ],
+      "was_schwierig": [
+        "Der Relaunch frisst mich gerade auf, ich sitze fast jeden Abend bis acht in der Agentur und danach bin ich nur noch Hülle. Unsere Chats sind dadurch wieder so funktional geworden – Zug, Termine, gute Nacht. Ich merke, wie ich anfange, dich zu vermissen, obwohl wir ja ständig schreiben, und das ist so ein komisches, einsames Gefühl. Vielleicht bin ich auch einfach nur erschöpft, ich kann das gerade schlecht auseinanderhalten.",
+        "Einsam trifft es schon, glaube ich. Nicht dramatisch, aber es ist da, so ein leises Ziehen, vor allem abends."
+      ],
+      "was_brauchst_du": [
+        "Diese Woche ehrlich gesagt vor allem Schlaf und ein bisschen Nachsicht, wenn ich kurz angebunden bin. Und ich brauche unser Wochenende am 23. wie einen Anker – bitte lass uns das schützen, egal was eure Firma macht."
+      ],
+      "worauf_freust_du_dich": [
+        "Auf Freitag in einer Woche, wenn du kommst. Ich habe den Portugiesen reserviert und Jule will dich unbedingt kurz sehen, aber ich halte uns den Samstag frei, versprochen. Und ein kleines bisschen freue ich mich auch auf den Moment, wenn der Relaunch-Wahnsinn vorbei ist."
+      ],
+      "was_absprechen": [
+        "Sag mir bitte so früh wie möglich, ob der 23. sicher steht, wegen der Reservierung und weil ich sonst die ganze Woche auf heißen Kohlen sitze. Und wir wollten noch klären, wer im Februar zuerst fährt."
+      ]
+    },
+    "style": "text"
+  },
+  "partner_b": {
+    "focus_reply": "Termin steht, 23. Januar. Insofern: erledigt.",
+    "sections": {
+      "was_schoen": [
+        "Fußball am Dienstag, wir haben 7:3 gewonnen. Und dein Paket mit den Espressobohnen kam an – danke."
+      ],
+      "was_schwierig": [
+        "Stress mit der Abnahme. Sailer redet jetzt doch von Győr nächste Woche.",
+        "Heißt im schlimmsten Fall: Ich fliege Donnerstag und bin das Wochenende dort. Ich weiß es aber erst Mittwoch sicher."
+      ],
+      "was_brauchst_du": [
+        "Nichts.",
+        "Na gut: dass niemand sauer ist, wenn die Firma mir dazwischenfunkt. Das kann ich nämlich nicht steuern."
+      ],
+      "worauf_freust_du_dich": [
+        "Hamburg, wenn es klappt."
+      ],
+      "was_absprechen": [
+        "Ich sage dir bis Mittwochabend Bescheid wegen dem 23."
+      ]
+    },
+    "style": "text"
+  },
+  "between_notes": {
+    "partner_a": [
+      {"day": 4, "text": "Drück die Daumen, dass Mittwoch gute Nachrichten bringt. Ich will dich am Freitag am Gleis stehen sehen."}
+    ],
+    "partner_b": []
+  },
+  "ground_truth": {
+    "themes": ["feeling-lonely", "work-and-purpose"],
+    "must_mention": [
+      "Leas Überstunden wegen des Relaunchs",
+      "Győr-Abnahme droht den 23. Januar zu kippen",
+      "Toms Sprachnachricht nach dem Fußball",
+      "Paket mit Espressobohnen",
+      "Zusage oder Absage bis Mittwochabend"
+    ],
+    "quote_candidates": [
+      "Ich merke, wie ich anfange, dich zu vermissen, obwohl wir ja ständig schreiben, und das ist so ein komisches, einsames Gefühl.",
+      "Na gut: dass niemand sauer ist, wenn die Firma mir dazwischenfunkt.",
+      "Und ich brauche unser Wochenende am 23. wie einen Anker – bitte lass uns das schützen, egal was eure Firma macht."
+    ],
+    "appreciation_a_about_b": "Dass du mir Dienstag nach dem Fußball noch eine Sprachnachricht geschickt hast, obwohl du todmüde warst – die habe ich mir zweimal angehört.",
+    "appreciation_b_about_a": "Und dein Paket mit den Espressobohnen kam an – danke.",
+    "synthesis_notes": "Spannungsaufbau: Beide wissen, dass der 23. wackelt. Toms erstes Nichts. in was_brauchst_du ist ein Deepening-Testfall – die eine Nachfrage fördert seine vorweggenommene Abwehr zutage (niemand soll sauer sein), das ist sein wichtigster Satz der Woche. Leas Anker-Bitte und Toms Vorbehalt stehen in direkter Spannung; Synthese sollte das benennen, ohne Drohkulisse."
+  }
+}

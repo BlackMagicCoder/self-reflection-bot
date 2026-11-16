@@ -1,0 +1,15 @@
+[Unit]
+Description=CBT self-reflection Telegram bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/apps/self-reflection
+EnvironmentFile=%h/etc/self-reflection.env
+ExecStart=/usr/local/bin/uv run --frozen python bot.py
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=default.target

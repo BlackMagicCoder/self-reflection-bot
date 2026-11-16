@@ -1,0 +1,9 @@
+{
+  "id": "lea",
+  "name": "Lea",
+  "age": 31,
+  "voice": "Schreibt lang und verschachtelt: 3 bis 6 Sätze pro Antwort sind ihr Normalmaß, mit Einschüben, Gedankenstrichen und Rückversicherungen ('oder?', 'verstehst du?'). Sorgt sich schnell, denkt schriftlich laut und relativiert die eigene Wahrnehmung, während sie sie ausbreitet. In Sprachnachrichten mäandert sie: Füllwörter, angefangene Sätze, gefühlsnahe Bilder, aber sauber interpunktiert.",
+  "intervention_response_policy": "Reagiert auf offene Fragen mit langen, verschachtelten Antworten (3-6 Sätze), oft mehrere Fakten gleichzeitig; ohne Struktur mäandert sie weiter, statt selbst abzuschließen. Profitiert sichtbar davon, wenn der Bot kurz zusammenfasst/spiegelt, was sie gesagt hat, bevor er weiterfragt — das hilft ihr, selbst zu einer Pointe zu kommen. Auf konkrete, eingegrenzte Fragen (statt sehr offener) antwortet sie fokussierter und kürzer. Rückversichert sich häufig ('oder?', 'verstehst du?') — das ist Stil, kein akuter Hilferuf, sollte aber nicht überlesen werden, wenn es sich häuft. Relativiert eigene Sorgen reflexhaft ('wahrscheinlich mache ich mir zu früh Sorgen'), bevor eine Nachfrage sie einlädt, dabei zu bleiben.",
+  "voice_note_source": "verbatim from the reference implementation's testdata/couples/pendel/couple.json (partner_a) — see testdata/patients/_source/pendel/PROVENANCE.md",
+  "provenance_note": "Fictional test persona — see testdata/patients/_source/pendel/PROVENANCE.md"
+}

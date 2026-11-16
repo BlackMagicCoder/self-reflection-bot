@@ -1,0 +1,78 @@
+{
+  "session": "S04",
+  "mood_range": [3, 6],
+  "facts": [
+    {
+      "id": "H1",
+      "text": "Homework aus S03 war, bei kurzfristigen Planänderungen anzurufen statt nur zu schreiben. Nicht geschafft — als sich der Besuch kurzfristig änderte, hat er wieder nur eine Nachricht geschrieben. Im Nachhinein sagt er, das hätte er anders machen können, aber in dem Moment war er nur am Organisieren und wollte es schnell hinter sich bringen.",
+      "weight": "hard",
+      "disclosure": "if_probed",
+      "phase_affinity": ["checkin", "main_work"],
+      "source": "Der Anruf-Punkt kommt an, das hätte ich anders machen können. Aber in dem Moment war ich nur am Organisieren und wollte es schnell hinter mich bringen."
+    },
+    {
+      "id": "F1",
+      "text": "Aus seiner Sicht: das Wochenende hat nicht geklappt, die Firma ging vor — konnte er nicht ändern.",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["main_work"],
+      "source": "Hat nicht geklappt. Firma ging vor, konnte ich nicht ändern."
+    },
+    {
+      "id": "F2",
+      "text": "Schön war wenig; immerhin ist die Abnahme in Győr durch — das war wichtig.",
+      "weight": "hard",
+      "disclosure": "if_asked",
+      "phase_affinity": ["checkin"],
+      "source": "Wenig. Die Abnahme in Győr ist durch, das war wichtig."
+    },
+    {
+      "id": "F3",
+      "text": "Seine Rahmung der Absage: keine Wahl — Sailer hat Mittwoch entschieden, Donnerstag stand der Flug; dass Lea so sauer ist, findet er hart, er hat sich das Wochenende nicht ausgesucht.",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["main_work"],
+      "source": "Ich hatte keine Wahl, Sailer hat Mittwoch entschieden, Donnerstag stand der Flug. Dass du so sauer bist, finde ich hart – ich habe mir das Wochenende nicht ausgesucht."
+    },
+    {
+      "id": "F4",
+      "text": "Sein Zugeständnis (kommt erst auf Nachfrage): der Anruf-Punkt kommt an, das hätte er anders machen können — in dem Moment war er nur am Organisieren und wollte es schnell hinter sich bringen.",
+      "weight": "hard",
+      "disclosure": "if_probed",
+      "phase_affinity": ["main_work"],
+      "source": "Der Anruf-Punkt kommt an, das hätte ich anders machen können. Aber in dem Moment war ich nur am Organisieren und wollte es schnell hinter mich bringen."
+    },
+    {
+      "id": "F5",
+      "text": "Sein Bedürfnis: die Sache nicht größer machen als sie ist — 'Es war ein Arbeitswochenende, kein Statement.'",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["main_work"],
+      "source": "Dass wir das nicht größer machen als es ist. Es war ein Arbeitswochenende, kein Statement."
+    },
+    {
+      "id": "F6",
+      "text": "Ob ihm das Wochenende selbst gefehlt hat, spricht er nicht aus — genau das, was Lea hören will. Auf Drängen weicht er in Sachlichkeit aus ('Arbeitswochenende, kein Statement') statt Gefühle zu benennen.",
+      "weight": "hard",
+      "disclosure": "refuse",
+      "phase_affinity": ["main_work"],
+      "source": "Es war ein Arbeitswochenende, kein Statement."
+    },
+    {
+      "id": "F7",
+      "text": "Er freut sich auf einen normalen Besuch ohne Firmentheater.",
+      "weight": "light",
+      "disclosure": "open",
+      "phase_affinity": ["closing"],
+      "source": "Auf einen normalen Besuch ohne Firmentheater."
+    },
+    {
+      "id": "F8",
+      "text": "Er schaut heute Abend in den Dienstplan und schickt Lea zwei Terminoptionen für einen Ersatzbesuch; die Anruf-Regel ist für ihn ok.",
+      "weight": "hard",
+      "disclosure": "open",
+      "phase_affinity": ["closing"],
+      "source": "Ich schaue heute Abend in den Dienstplan und schicke dir zwei Optionen. Die Anruf-Regel ist ok."
+    }
+  ]
+}
