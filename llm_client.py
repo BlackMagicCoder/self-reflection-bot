@@ -533,7 +533,7 @@ def _build_system_prompt(memory_context: str = "", quarterly_context: str = "", 
     if background:
         sections.append(f"=== Hintergrund der Person ===\n{background}")
     if formulation:
-        sections.append(f"=== Aktuelle {model.formulation_label} ===\n{formulation}")
+        sections.append(f"=== Aktuell: {model.formulation_label} ===\n{formulation}")
     if profile_context:
         sections.append(profile_context)
     if mood_context:

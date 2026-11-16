@@ -194,7 +194,7 @@ def test_end_session_tool_does_not_require_homework(model):
 @pytest.mark.parametrize("model", ALL_MODELS, ids=_model_id)
 def test_build_system_prompt_uses_model_formulation_label(model):
     prompt = llm_client._build_system_prompt(formulation="FORMULIERUNG", model=model)
-    assert f"=== Aktuelle {model.formulation_label} ===" in prompt
+    assert f"=== Aktuell: {model.formulation_label} ===" in prompt
 
 
 @pytest.mark.parametrize("model", ALL_MODELS, ids=_model_id)

@@ -59,7 +59,7 @@ def test_export_includes_profile_subfields_and_model_label():
     assert "Wöchentliche Erinnerung: Mittwoch, 18:30 Uhr" in text
     assert "Tägliche Stimmungsabfrage: 09:00 Uhr" in text
     assert "Gesprächsansatz: " in text
-    assert "== ACT-Fallkonzeptualisierung ==" in text  # not the hardcoded CBT label
+    assert "== ACT-Gesamtbild ==" in text  # not the hardcoded CBT label
 
 
 def test_export_shows_homework_consent_and_active_session():

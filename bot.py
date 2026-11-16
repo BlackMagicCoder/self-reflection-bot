@@ -163,7 +163,7 @@ _HELP_TEXT = (
     "/model – Gesprächsansatz anzeigen & wechseln\n"
     "/provider – KI-Anbieter anzeigen & wechseln\n"
     "/settings – Erinnerung & Stimmungsabfrage anpassen\n"
-    "/formulation – Fallkonzeptualisierung anzeigen\n"
+    "/formulation – Gesamtbild anzeigen\n"
     "/background – Hintergrundinformationen anzeigen\n"
     "/export – Alle Daten als Datei exportieren\n"
     "/end – Sitzung beenden und speichern\n"
@@ -241,7 +241,7 @@ Was gespeichert wird (lokal auf dem Server, verschlüsselt):
 - Sitzungszusammenfassungen und vollständige Sitzungsverläufe (Wortlaut)
 - Stimmungsprotokoll und Einträge im Emotionstagebuch
 - Automatische Wochen-/Monats-/Jahresrückblicke
-- Eine sich entwickelnde Fallkonzeptualisierung (je nach gewähltem Gesprächsansatz)
+- Ein fortgeschriebenes Gesamtbild (je nach gewähltem Gesprächsansatz)
 - Notizen zwischen den Sitzungen und der Stand einer laufenden Sitzung
 
 Was an Dritte übertragen wird:
@@ -1881,7 +1881,7 @@ async def formulation_command(update: Update, context: ContextTypes.DEFAULT_TYPE
     form = memory.load_formulation(chat_id)
     if not form:
         await update.message.reply_text(
-            "Noch keine Fallkonzeptualisierung vorhanden. Schließe eine Sitzung ab, um eine zu erstellen."
+            "Noch kein Gesamtbild vorhanden. Schließe eine Sitzung ab, um eines zu erstellen."
         )
         return
     label = therapy_models.get(memory.get_therapy_model_id(chat_id)).formulation_label
@@ -1905,7 +1905,7 @@ async def model_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> N
         await update.message.reply_text("\n".join(lines))
         return
     lines.append(
-        "\nEin Wechsel gilt ab deiner nächsten Sitzung; die Fallkonzeptualisierung "
+        "\nEin Wechsel gilt ab deiner nächsten Sitzung; das Gesamtbild "
         "wird im neuen Ansatz fortgeschrieben."
     )
     buttons = [
@@ -2258,7 +2258,7 @@ async def delete_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
     ]])
     await update.message.reply_text(
         "Soll ich alle deine Daten unwiderruflich löschen?\n\n"
-        "Das betrifft: Profil, alle Sitzungen, Fallkonzeptualisierung, Stimmungsprotokoll, Emotionstagebuch, Notizen und Hintergrundinformationen.",
+        "Das betrifft: Profil, alle Sitzungen, Gesamtbild, Stimmungsprotokoll, Emotionstagebuch, Notizen und Hintergrundinformationen.",
         reply_markup=keyboard,
     )
 
@@ -2327,7 +2327,7 @@ BOT_COMMANDS: list[tuple[str, str]] = [
     ("sessions", "Sitzungen anzeigen & einzeln löschen"),
     ("themes", "Wiederkehrende Themen"),
     ("homework", "Aktuelle Hausaufgabe anzeigen"),
-    ("formulation", "Fallkonzeptualisierung anzeigen"),
+    ("formulation", "Gesamtbild anzeigen"),
     ("background", "Hintergrundinformationen anzeigen"),
     ("model", "Gesprächsansatz anzeigen & wechseln"),
     ("provider", "KI-Anbieter anzeigen & wechseln"),
@@ -2487,7 +2487,7 @@ async def _process_text_locked(update: Update, context: ContextTypes.DEFAULT_TYP
             in_session = bool(active_sessions.get(chat_id, {}).get("active"))
             note = (
                 "Gespeichert — ab sofort wird kein Name mehr an den KI-Anbieter gesendet.\n"
-                "Hinweis: In der Fallkonzeptualisierung und älteren Zusammenfassungen kann ein "
+                "Hinweis: Im Gesamtbild und älteren Zusammenfassungen kann ein "
                 "früherer Name noch vorkommen, bis sie durch neue Sitzungen überschrieben sind."
             )
             if in_session:

@@ -67,7 +67,7 @@ CBT = TherapyModel(
         "Achte schon beim Check-in auf erste Hinweise auf Gedankenmuster oder Situationen, "
         "die zum heutigen Thema werden könnten"
     ),
-    formulation_label="CBT-Fallkonzeptualisierung",
+    formulation_label="CBT-Gesamtbild",
     formulation_structure=(
         "Identifizierte Kernüberzeugungen",
         "Vermittelnde Überzeugungen/Grundannahmen und die Bewältigungsstrategien, die sich daraus entwickelt haben",
@@ -135,7 +135,7 @@ MBT = TherapyModel(
         "Achte beim Check-in darauf, wie klar oder vage die Person eigene und fremde mentale "
         "Zustände gerade beschreibt"
     ),
-    formulation_label="MBT-Fallkonzeptualisierung",
+    formulation_label="MBT-Gesamtbild",
     formulation_structure=(
         "Typisches Mentalisierungsprofil dieser Person (eher hyper- oder hypomentalisierend, in welchen Situationen)",
         "Wiederkehrende Auslöser für Mentalisierungsabbrüche",
@@ -196,7 +196,7 @@ PSYCHODYNAMIC = TherapyModel(
         "Achte beim Check-in auf erste Anzeichen wiederkehrender Muster oder kleiner "
         "Abwehrbewegungen, ohne sie schon zu benennen"
     ),
-    formulation_label="Psychodynamische Fallformulierung",
+    formulation_label="Psychodynamisches Gesamtbild",
     formulation_structure=(
         "Wiederkehrende Beziehungs- und Verhaltensmuster dieser Person",
         "Typische Abwehrmechanismen und wovor sie schützen",
@@ -258,7 +258,7 @@ ACT = TherapyModel(
         "Achte beim Check-in darauf, wogegen die Person gerade ankämpft, statt es anzunehmen — "
         "das ist oft schon der Kern des heutigen Themas"
     ),
-    formulation_label="ACT-Fallkonzeptualisierung",
+    formulation_label="ACT-Gesamtbild",
     formulation_structure=(
         "Zentrale Vermeidungs- und Kampfmuster gegenüber schwierigen Gedanken und Gefühlen",
         "Wichtige Werte dieser Person und wie stark aktuelles Verhalten damit übereinstimmt",
@@ -322,7 +322,7 @@ DBT_SKILLS = TherapyModel(
         "Achte beim Check-in darauf, wie intensiv die Emotionen seit der letzten Sitzung waren "
         "und welcher Skill-Bereich dafür gerade am naheliegendsten wäre"
     ),
-    formulation_label="DBT-Skills-Fallkonzeptualisierung",
+    formulation_label="DBT-Skills-Gesamtbild",
     formulation_structure=(
         "Wiederkehrende Situationen mit intensiven Emotionen und wie die Person bisher damit umgeht",
         "Bereits erprobte und wirksame Skills aus den vier Modulen",
@@ -383,7 +383,7 @@ SFBT = TherapyModel(
         "Frage beim Check-in gezielt nach kleinen Fortschritten oder Ausnahmen seit der letzten "
         "Sitzung, nicht nur danach, was schwierig war"
     ),
-    formulation_label="SFBT-Fallkonzeptualisierung",
+    formulation_label="SFBT-Gesamtbild",
     formulation_structure=(
         "Zielbild dieser Person (Wunderfrage-Antworten, konkrete Zielformulierungen)",
         "Bereits genutzte Stärken und Ausnahmen vom Problem",
@@ -738,7 +738,7 @@ ADAPTIVE = TherapyModel(
         "Bleib beim Check-in bewusst offen für alle Ansätze und achte auf erste Signale, welche "
         "Linse — Gedanken, Gefühle, Werte, Beziehungsmuster, ein Traum — heute am ehesten trägt"
     ),
-    formulation_label="Integrative Fallkonzeptualisierung",
+    formulation_label="Integratives Gesamtbild",
     formulation_structure=(
         "Bisher eingesetzte Ansätze und wofür sie genutzt wurden (z. B. "
         "SFBT-Skalierung zur Zielklärung, DBT-Skills bei akuter Belastung, MBT "

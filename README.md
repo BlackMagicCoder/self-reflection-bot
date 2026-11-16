@@ -10,7 +10,7 @@ Ein persönlicher Telegram-Bot, der Gespräche zur Selbstreflexion führt, sich 
 
 Für Menschen, die regelmäßig und strukturiert über sich nachdenken möchten – statt eines Tagebuchs oder einfach für sich.
 
-- **Sitzungen mit Gedächtnis:** Jede Sitzung baut auf den vorherigen auf – Hintergrund, Zusammenfassungen, eine fortgeschriebene Fallkonzeptualisierung und Gedanken aus der Zwischenzeit fließen ein.
+- **Sitzungen mit Gedächtnis:** Jede Sitzung baut auf den vorherigen auf – Hintergrund, Zusammenfassungen, ein fortgeschriebenes Gesamtbild und Gedanken aus der Zwischenzeit fließen ein.
 - **Zehn Gesprächsansätze, eine gemeinsame Grundlage:** angelehnt an CBT, MBT, psychodynamische Ansätze, ACT, DBT-Skills, SFBT, Traumarbeit, philosophische Beratung und den Stil von School of Life, dazu ein adaptiver Ansatz, der sich bei den anderen neun bedient. Zu jedem Ansatz gibt es ein Grundlagen-Dokument, das beschreibt, woran sich die Gesprächsführung orientiert.
 - **Nichts Wichtiges ohne Zustimmung:** Das Sprachmodell kann ein Sitzungsende nur *vorschlagen*. Gespeichert wird erst nach „Ja, beenden“; eine Hausaufgabe gilt erst nach „Ja, annehmen“ als vereinbart – das prüft der Code, nicht der Prompt.
 - **Verschlüsselt pro Person:** Jede Person hat einen eigenen Schlüssel, der nur im Arbeitsspeicher liegt. Nach jedem Neustart sind alle Daten gesperrt, bis die jeweilige Person sich mit `/unlock` entsperrt.
@@ -72,7 +72,7 @@ flowchart TD
     G --> V{"Sprachmodell schlägt Ende vor"}
     V --> Q["Buttons: Ja, beenden / Nein, weiterreden"]
     Q -->|"Nein, weiterreden"| G
-    Q -->|"Ja, beenden"| F["Speichern: Zusammenfassung,<br/>Verlauf, Fallkonzeption"]
+    Q -->|"Ja, beenden"| F["Speichern: Zusammenfassung,<br/>Verlauf, Gesamtbild"]
     E["/end"] --> F
     F --> H{"Hausaufgabe vorgeschlagen?"}
     H -->|nein| X["fertig"]
@@ -90,11 +90,11 @@ flowchart TD
     subgraph E["Gedächtnis-Ebenen"]
         E1["1 Hintergrund<br/>user_background.md"]
         E2["2 Sitzungs-Zusammenfassungen"]
-        E3["3 Fallkonzeption<br/>nach jeder Sitzung neu"]
+        E3["3 Gesamtbild<br/>nach jeder Sitzung neu"]
         E4["4 Notizen aus der Zwischenzeit"]
     end
     subgraph P["Systemprompt, in dieser Reihenfolge"]
-        P1["Quartalsrückblick"] --> P2["Hintergrund"] --> P3["Fallkonzeption"] --> P4["Profil"]
+        P1["Quartalsrückblick"] --> P2["Hintergrund"] --> P3["Gesamtbild"] --> P4["Profil"]
         P4 --> P5["Stimmung"] --> P6["Emotionstagebuch, 7 Tage"] --> P7["Notizen"]
         P7 --> P8["frühere Sitzungen"] --> P9["Zusammenfassung der laufenden Sitzung"] --> P10["Basis-Prompt des Ansatzes"]
     end
@@ -132,7 +132,7 @@ flowchart TD
     SOL -.-> ADA
 ```
 
-Jeder Ansatz ergänzt die Meta-Ebene nur um seine Rolle, Methoden, den Fokus des Check-ins und die Form seiner Fallkonzeption. Der adaptive Ansatz hat keine eigenen Techniken: Sein Werkzeugkasten wird beim Start aus den Methoden der neun anderen Ansätze zusammengesetzt (gestrichelte Pfeile), die Auswahl trifft das Sprachmodell im Gespräch und benennt einen Wechsel offen. Ein Test schlägt fehl, wenn ein neuer Ansatz dort fehlt.
+Jeder Ansatz ergänzt die Meta-Ebene nur um seine Rolle, Methoden, den Fokus des Check-ins und die Form seines Gesamtbilds. Der adaptive Ansatz hat keine eigenen Techniken: Sein Werkzeugkasten wird beim Start aus den Methoden der neun anderen Ansätze zusammengesetzt (gestrichelte Pfeile), die Auswahl trifft das Sprachmodell im Gespräch und benennt einen Wechsel offen. Ein Test schlägt fehl, wenn ein neuer Ansatz dort fehlt.
 
 ### Verschlüsselung pro Person
 
@@ -145,7 +145,7 @@ flowchart LR
     RS["Neustart"] -.->|"Schlüssel weg, alle gesperrt"| R
 ```
 
-Verschlüsselt wird auf **Wertebene**: Sitzungen, Verläufe, Profil, Fallkonzeption, Notizen, Stimmungswerte, Emotionstagebuch und Rückblicke. Datums-Spalten und die Schlüssel der Rückblicke bleiben bewusst Klartext (Begründung in `docs/privacy-compliance.md` §6). Details im Abschnitt [Verschlüsselung](#verschlüsselung).
+Verschlüsselt wird auf **Wertebene**: Sitzungen, Verläufe, Profil, Gesamtbild, Notizen, Stimmungswerte, Emotionstagebuch und Rückblicke. Datums-Spalten und die Schlüssel der Rückblicke bleiben bewusst Klartext (Begründung in `docs/privacy-compliance.md` §6). Details im Abschnitt [Verschlüsselung](#verschlüsselung).
 
 ---
 
@@ -333,7 +333,7 @@ Diese Angaben helfen dem Bot, die Gespräche persönlicher und relevanter für d
 | `/model` | Gesprächsansatz anzeigen und wechseln (10 zur Auswahl, siehe [Gesprächsansätze](#gesprächsansätze)) |
 | `/provider` | KI-Anbieter anzeigen und wechseln (nur auf dem Server konfigurierte; gilt ab der nächsten Sitzung, `/privacy` zeigt danach den passenden Datenschutzhinweis) |
 | `/settings` | Erinnerung und tägliche Stimmungsabfrage konfigurieren |
-| `/formulation` | Aktuelle Fallkonzeptualisierung des gewählten Ansatzes anzeigen |
+| `/formulation` | Aktuelles Gesamtbild des gewählten Ansatzes anzeigen |
 | `/background` | Hintergrundinformationen anzeigen |
 | `/export` | Alle gespeicherten Daten als Textdatei exportieren (inkl. vollständiger Sitzungsverläufe und aller Rückblicke) |
 | `/help` | Alle Befehle anzeigen |
