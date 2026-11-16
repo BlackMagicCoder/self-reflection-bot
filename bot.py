@@ -1885,7 +1885,7 @@ async def formulation_command(update: Update, context: ContextTypes.DEFAULT_TYPE
         )
         return
     label = therapy_models.get(memory.get_therapy_model_id(chat_id)).formulation_label
-    await _send_long(context.bot, chat_id, f"Aktuelle {label}:\n\n{form}")
+    await _send_long(context.bot, chat_id, f"{label} (aktueller Stand):\n\n{form}")
 
 
 async def model_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
